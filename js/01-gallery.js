@@ -64,6 +64,11 @@ galleryContainer.addEventListener('click', evt => {
             instance.close();
         }
     })
+    galleryContainer.removeEventListener('keydown', evt => {
+        if (evt.key === 'Escape') {
+            instance.close();
+       } 
+    });
 })
 
 

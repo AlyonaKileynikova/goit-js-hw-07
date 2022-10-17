@@ -25,10 +25,8 @@ galleryContainer.insertAdjacentHTML("beforeend", galleryTemplate);
 // }
 
 const lightbox = new SimpleLightbox(".gallery a", {
-  caption: true,
-  captionSelector: "img",
-  captionPosition: "bottom",
-  captionData: "alt",
+  captions: true,
+  captionsData: "alt",
   captionDelay: 250,
 });
 
